@@ -49,3 +49,26 @@ var app = {
 };
 
 app.initialize();
+
+function listItemChanged(item){
+    if (item.value == null || item.value == ""){
+        item.parentNode.removeChild(item);
+    }
+
+};
+
+document.getElementById("add").onclick = function() {
+  var list = document.getElementById('list');
+  var newLI = document.createElement('input');
+  newLI.type = "text";
+  newLI.class = "list-group-item";
+  newLI.style = "display:table-cell; width:100%";
+  list.appendChild(newLI);
+};
+
+document.getElementById("GoButton").addEventListener("click", function(){
+	alert("hello");
+});
+
+
+

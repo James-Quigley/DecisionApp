@@ -54,7 +54,8 @@ function listItemChanged(item){
     if (item.value == null || item.value == ""){
         item.parentNode.removeChild(item);
     }
-}
+
+};
 
 document.getElementById("add").onclick = function() {
   var list = document.getElementById('list');
@@ -63,4 +64,17 @@ document.getElementById("add").onclick = function() {
   newLI.className = "list-group-item";
   newLI.style = "display:table-cell; width:100%";
   list.appendChild(newLI);
-}
+};
+
+document.getElementById("GoButton").addEventListener("click", function(){
+	var listItems = document.getElementsByClassName("list-group-item");
+	var choice = Math.floor(Math.random() * listItems.length);
+	
+	var text = listItems[choice].value;
+	
+	//Change
+	alert(text);
+});
+
+
+
