@@ -60,7 +60,7 @@ document.getElementById("add").onclick = function() {
   var list = document.getElementById('list');
   var newLI = document.createElement('input');
   newLI.type = "text";
-  newLI.class = "list-group-item";
+  newLI.className = "list-group-item";
   newLI.style = "display:table-cell; width:100%";
   list.appendChild(newLI);
 }
