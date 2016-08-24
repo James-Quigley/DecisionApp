@@ -49,3 +49,11 @@ var app = {
 };
 
 app.initialize();
+
+function listItemChanged(item){
+    if (item.value == null || item.value == ""){
+        item.parentNode.removeChild(item);
+    }
+}
+
+document.getElementById("li").addEventListener("change", listItemChanged(this));
