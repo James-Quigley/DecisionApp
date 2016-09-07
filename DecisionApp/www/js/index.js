@@ -51,12 +51,17 @@ var app = {
 app.initialize();
 
 document.getElementById("add").onclick = function() {
-  var list = document.getElementById('list');
-  var newLI = document.createElement('input');
-  newLI.type = "text";
-  newLI.className = "list-group-item";
-  newLI.style.cssText = "display:table-cell; width:100%";
-  list.appendChild(newLI);
+    var list = document.getElementById('list');
+    var newLI = document.createElement('input');
+    newLI.type = "text";
+    newLI.className = "list-group-item";
+    newLI.style.cssText = "display:table-cell; width:100%";
+    $(newLI)
+        .hide()
+        .css('opacity',0.0)
+        .appendTo('#' + "list")
+        .slideDown('slow')
+        .animate({opacity: 1.0})
 };
 
 document.getElementById("GoButton").addEventListener("click", function(){
