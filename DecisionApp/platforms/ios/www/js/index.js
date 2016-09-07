@@ -68,9 +68,23 @@ document.getElementById("add").onclick = function() {
 
 document.getElementById("GoButton").addEventListener("click", function(){
 	var listItems = document.getElementsByClassName("list-group-item");
+<<<<<<< HEAD
 	var choice = Math.floor(Math.random() * listItems.length);
 	
 	var text = listItems[choice].value;
+=======
+	
+	var listItemsFinal = [];
+	for(int i = 0; i < listItems.length; i++){
+		if(listItems[i].value != "" || listItems[i].value != null){
+			listItemsFinal.push(listItems[i]);
+		}
+	}
+	
+	var choice = Math.floor(Math.random() * listItemsFinal.length);
+	
+	var text = listItemsFinal[choice].value;
+>>>>>>> origin/master
 	
 	//Change
 	alert(text);
