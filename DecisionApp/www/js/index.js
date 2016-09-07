@@ -50,10 +50,6 @@ var app = {
 
 app.initialize();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 document.getElementById("add").onclick = function() {
   var list = document.getElementById('list');
   var newLI = document.createElement('input');
