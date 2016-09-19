@@ -56,12 +56,13 @@ document.getElementById("add").onclick = function() {
     newLI.type = "text";
     newLI.className = "list-group-item";
     newLI.style.cssText = "display:table-cell; width:100%";
-    $(newLI)
+    /*$(newLI)
         .hide()
         .css('opacity',0.0)
         .appendTo('#' + "list")
         .slideDown('slow')
-        .animate({opacity: 1.0})
+        .animate({opacity: 1.0});*/
+    list.appendChild(newLI);
 };
 
 document.getElementById("GoButton").addEventListener("click", function(){
