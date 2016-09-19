@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -56,13 +56,13 @@ document.getElementById("add").onclick = function() {
     newLI.type = "text";
     newLI.className = "list-group-item";
     newLI.style.cssText = "display:table-cell; width:100%";
-    /*$(newLI)
+    $(newLI)
         .hide()
         .css('opacity',0.0)
         .appendTo('#' + "list")
         .slideDown('slow')
-        .animate({opacity: 1.0});*/
-    list.appendChild(newLI);
+        .animate({opacity: 1.0});
+    //list.appendChild(newLI);
 };
 
 document.getElementById("GoButton").addEventListener("click", function(){
@@ -84,7 +84,8 @@ document.getElementById("GoButton").addEventListener("click", function(){
 	var text = listItemsFinal[choice].value;
 	
 	//Outputs result - CHANGE
-	alert(text);
+	//alert(text);
+    window.location = "result.html?result=" + text;
 });
 
 
