@@ -9,8 +9,7 @@ window.onload = function() {
 		document.getElementById("mapsLink").href = mapsLink;
 	}
 	else {
-		var mapsLink = "geo:0,0?q=" + result;
-		document.getElementById("mapsLink").href = mapsLink;
+		window.open('geo:0,0?q=' + result);
 	}
 }
 

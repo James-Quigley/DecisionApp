@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -50,27 +50,23 @@ var app = {
 
 app.initialize();
 
-
 document.getElementById("add").onclick = function() {
-  var list = document.getElementById('list');
-  var newLI = document.createElement('input');
-  newLI.type = "text";
-  newLI.className = "list-group-item";
-  newLI.style = "display:table-cell; width:100%";
-  list.appendChild(newLI);
+    var list = document.getElementById('list');
+    var newLI = document.createElement('input');
+    newLI.type = "text";
+    newLI.className = "list-group-item";
+    newLI.style.cssText = "display:table-cell; width:100%";
+    $(newLI)
+        .hide()
+        .css('opacity',0.0)
+        .appendTo('#' + "list")
+        .slideDown('slow')
+        .animate({opacity: 1.0});
+    //list.appendChild(newLI);
 };
 
 document.getElementById("GoButton").addEventListener("click", function(){
-<<<<<<< Updated upstream
-	var listItems = document.getElementsByClassName("list-group-item");
-<<<<<<< HEAD
-	var choice = Math.floor(Math.random() * listItems.length);
-	
-	var text = listItems[choice].value;
-=======
-=======
 	var listItems = document.getElementsByClassName("list-group-item"); //Array of all values of the list
->>>>>>> Stashed changes
 	
 	var listItemsFinal = []; //Contains only non-empty items
 	
@@ -86,10 +82,10 @@ document.getElementById("GoButton").addEventListener("click", function(){
 	//Chooses an item at random
 	var choice = Math.floor(Math.random() * listItemsFinal.length);
 	var text = listItemsFinal[choice].value;
->>>>>>> origin/master
 	
 	//Outputs result - CHANGE
-	alert(text);
+	//alert(text);
+    window.location = "result.html?result=" + text;
 });
 
 

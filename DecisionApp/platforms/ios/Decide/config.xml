@@ -17,10 +17,10 @@
     </feature>
     <name>Decide</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Help me make up my mind!
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        James Quigley/Joshua Hewlett
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -30,6 +30,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="maps:*" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <preference name="AllowInlineMediaPlayback" value="false" />
