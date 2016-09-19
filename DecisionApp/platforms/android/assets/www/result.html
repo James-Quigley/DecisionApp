@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
+<link rel="stylesheet" type="text/css" href="css/overrides.css" />
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
@@ -13,11 +14,12 @@
 <body>
 	<header>
 		<h1 id="result"></h1>
+		<h2 id="device"></h2>
 	</header>
 	<main>
 		<h2>Open In:</h2>
-		<button id="browser" class="btn">Browser</button>
-		<button id="maps" class="btn">Maps</button>
+		<a href="#" id="browserLink"><button id="browser" class="btn">Browser</button></a>
+		<a href="" id="mapsLink"><button id="maps" class="btn">Maps</button></a>
 	</main>
 
 	<script type="text/javascript" src="cordova.js"></script>
