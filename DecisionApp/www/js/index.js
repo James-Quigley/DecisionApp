@@ -62,7 +62,7 @@ document.getElementById("add").onclick = function() {
         .appendTo('#' + "list")
         .slideDown('slow')
         .animate({opacity: 1.0});
-    //list.appendChild(newLI);
+    newLI.focus();
 };
 
 document.getElementById("GoButton").addEventListener("click", function(){
