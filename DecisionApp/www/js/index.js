@@ -35,6 +35,3 @@ document.getElementById("GoButton").addEventListener("click", function(){
 	//alert(text);
     window.location = "result.html?result=" + text;
 });
-
-
-
