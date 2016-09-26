@@ -4,7 +4,7 @@ window.onload = function() {
     
     //Changes Maps link to appropriate OS specifications
 	result = parent.document.URL.substring(parent.document.URL.indexOf('?') + 8, parent.document.URL.length);
-	document.getElementById("result").innerHTML = result;
+	document.getElementById("result").innerHTML = result.replace(/%20/g, " ");
 	deviceType = (navigator.userAgent.match(/iPhone/i))  == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : "null";
 	
 
