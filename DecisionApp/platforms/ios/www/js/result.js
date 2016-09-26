@@ -12,7 +12,7 @@ window.onload = function() {
 		var mapsLink = "maps:q=" + result;
 		document.getElementById("mapsLink").href = mapsLink;
         
-        
+        //Adds back button
         document.getElementById("backDiv").innerHTML = "<a href=\"index.html\"><button id=\"backButton\" class=\"btn\">Back</button></a>";
 	}
 	else {
