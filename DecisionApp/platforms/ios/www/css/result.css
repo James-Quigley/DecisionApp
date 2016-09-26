@@ -1,10 +1,40 @@
-h1{
-	text-align: center;
-
+body *{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
-main *{
-	text-align: center;
-	margin: 0 auto;
-	
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+header{
+    background-color: #673AB7;
+    height: 10%;
+    position: relative;
+}
+
+h1{
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    margin: 2% auto;
+    color: #212121;
+}
+
+button{
+    width: 20%;
+    margin: 2% auto;
+    background-color: #673AB7;
+    color: #FFF;
 }
